@@ -1,0 +1,38 @@
+
+
+Instructions:
+=============
+- Supported set of languages: Python, Java, C++
+- Basefolder name or zipfilename should be the studentid. eg: 11xxxxxx.zip
+- The folder should have a script file named "run_code.sh".
+- Executing run_code.sh should do all the necessary steps required for the code execution like compiling, linking and execution
+- Assume relative file paths in your code i.e. "./filename.txt" or "../hw1/filename.txt" instead of "/never/use/this/file/format" or "C:/definitely/not/this/format/"
+
+- The output should be dumped in a "output.txt" file in the format specified:
+
+OUTPUT A
+FRO11987 FRO12685 0.4325
+FRO11987 ELE11375 0.4225
+FRO11987 GRO94758 0.4125
+FRO11987 SNA80192 0.4025
+FRO11987 FRO18919 0.4015
+OUTPUT B
+FRO11987 FRO12685 DAI95741 0.4325
+FRO11987 ELE11375 GRO73461 0.4225
+FRO11987 GRO94758 ELE26917 0.4125
+FRO11987 SNA80192 ELE28189 0.4025
+FRO11987 FRO18919 GRO68850 0.4015
+
+Explanation:
+- Line 1 should have "output A" string
+- Next five lines should have the top five sets with decreasing confidence scores for a part of the question.
+	- Format: <item1> <item2> <cofidence score>
+- Line 7 should have "output B"
+- Next five lines should have the top five sets with decreasing confidence scores for b part of the question
+- Assume any case (upper or lower)
+
+- To reemphesize, make sure when the run_code.sh is executed the output.txt file is dumped
+- Zip the entire folder and submit it with your <student_id>.zip format. eg. 11xxxxxx.zip
+
+
+- If you do not have any programming experience, recommend starting with Python since it is easy to learn.
